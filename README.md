@@ -17,23 +17,23 @@ Try running the following commands:
 
 ### Setup project in local:
 
-# create a dbt project by the command: `dbt init <app_name>`
+### create a dbt project by the command: `dbt init <your_app_name>`
 
 
 1. Create an enviroment in python 3+ version: virtualenv -p python3 env
 2. Install the requirements: pip install -r requirement.txt
 3. set configs in dbt_project.yml file:
-    - name: '<app_name>'
+    - name: '<your_app_name>'
     - models:
-        my_new_project into --> 
+        dbt_app into --> 
 
     - models:
-        <app_name>
-    - profile: '<app_name>'
+        <your_app_name>
+    - profile: '<your_app_name>'
     
 4. Now set up profiles.yml.
 Note:
-- When you invoke(`dbt run`) dbt from the CLI, dbt parses your dbt_project.yml for the name of the `profile` uses to connect to your datawarehouse.
+- When you invoke(`dbt run`) dbt from the CLI, dbt parses your dbt_project.yml for the name of the `profile` uses to connect to your data      warehouse.
 - dbt then checks your `profiles.yml` file for a `profile`(in dbt_project.yml) with the same name.
 - A profile contains all the details required to connect to your data warehouse.
 - This file(`profiles.yml`) generally lives outside of your dbt project to avoid sensitive credentials being check in to version control.
