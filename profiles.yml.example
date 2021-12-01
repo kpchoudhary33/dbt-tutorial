@@ -1,0 +1,13 @@
+# example profiles.yml file
+dbt_app:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: alice
+      password: <password>
+      port: 5432
+      dbname: <database-name>
+      schema: target
+      threads: 4
