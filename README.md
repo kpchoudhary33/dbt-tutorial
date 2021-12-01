@@ -41,9 +41,13 @@ Note:
 
 5. Copy profiles.yml.example file into another `profiles.yml` file which must exists here: ~/.dbt/.(if not exists create it manually.)
 
-6. change some configs like type, host, user, password..
+6. run `dbt debug` if all ok message should be: All checks passed
 
-7. run `dbt debug` if all ok message should be: All checks passed
+<!-- 6. change some configs like type, host, user, password.. -->
+
+7. run `dbt seed` 
 
 8. then `dbt run`.
 
+
+Now can see tables and views created in your data warehouse.
