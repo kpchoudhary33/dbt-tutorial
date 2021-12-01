@@ -1,11 +1,11 @@
 {% docs __overview__ %}
 
-## Data Documentation for Jaffle Shop
+## Data Documentation for dbt_app.
 
-`jaffle_shop` is a fictional ecommerce store.
+`dbt_app` is a test dbt app.
 
 This [dbt](https://www.getdbt.com/) project is for testing out code.
 
-The source code can be found [here](https://github.com/clrcrl/jaffle_shop).
+The source code can be found [here](https://github.com/kpchoudhary33/dbt-tutorial).
 
 {% enddocs %}
